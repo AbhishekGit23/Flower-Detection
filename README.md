@@ -11,6 +11,20 @@ https://www.kaggle.com/datasets/alxmamaev/flowers-recognition/data
 - Internet
 ## Google colab link:
 https://colab.research.google.com/drive/1haUrPrw5ijn-kmPWf8je3o3g_umOly4e?usp=sharing
+
+## About Dataset
+### Context
+This dataset contains 4242 images of flowers.
+The data collection is based on the data flicr, google images, yandex images.
+You can use this datastet to recognize plants from the photo.
+
+### Content
+The pictures are divided into five classes: chamomile, tulip, rose, sunflower, dandelion.
+For each class there are about 800 photos. Photos are not high resolution, about 320x240 pixels. Photos are not reduced to a single size, they have different proportions!
+## Dataset Link
+https://www.kaggle.com/datasets/alxmamaev/flowers-recognition/data
+
+
 ## Visualization
 The given below file is the input. Here we can see the 5 tyes of flowers i.e. Daisy, Dandelion, Rose, Sunflower, and Tulips
 ![Flowers](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/718ad8e2-03d3-4857-b132-bbc6f4972dc7)
