@@ -5,6 +5,8 @@ https://www.kaggle.com/datasets/alxmamaev/flowers-recognition/data
 ## Tools Used
 - Google Colab
 - Python
+- Kaggle
+- GitHub
 - Laptop
 - Internet
 ## Google colab link:
