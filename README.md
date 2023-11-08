@@ -21,9 +21,6 @@ You can use this datastet to recognize plants from the photo.
 ### Content
 The pictures are divided into five classes: chamomile, tulip, rose, sunflower, dandelion.
 For each class there are about 800 photos. Photos are not high resolution, about 320x240 pixels. Photos are not reduced to a single size, they have different proportions!
-## Dataset Link
-https://www.kaggle.com/datasets/alxmamaev/flowers-recognition/data
-
 
 ## Visualization
 The given below file is the input. Here we can see the 5 tyes of flowers i.e. Daisy, Dandelion, Rose, Sunflower, and Tulips
