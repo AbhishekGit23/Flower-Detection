@@ -26,11 +26,34 @@ For each class there are about 800 photos. Photos are not high resolution, about
 The given below file is the input. Here we can see the 5 tyes of flowers i.e. Daisy, Dandelion, Rose, Sunflower, and Tulips
 ![Flowers](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/718ad8e2-03d3-4857-b132-bbc6f4972dc7)
 
+##Dataset Preprocessing 
+Here I have applied the LabelEncoding as a Preprocessing. Also I have divided the Image by 255 to take it in the range of 0 to 1. As a greyscale image have values from 0 to 255.
+I have also used keras.preprocess.imge to process my images to prevent overfitting.
+
+## Modeling 
+- For modeling my data I have used CNN ie Convolutional Neural Network. with 40 filters and ReLu as my Activation Function.
+- Then I have applied Max Pooling 2D to reduce the size and resolution of the image with pool size as 2X2.
+- Then again I have applied the convolutional layer with 50 filters and activation function as ReLu.
+- Then again I have applied MaxPooling2D with pool size as 2X2 and here I have also applied the strides as 2X2 so that less feature reduction will be there.
+- Then again I have applied the convolutional layer with 55 filters and activation function as ReLu.
+- Then again I have applied MaxPooling2D with pool size as 2X2 and here I have also applied the strides as 2X2 so that less feature reduction will be there.
+- THen again I have applied the convolutional layer with 60 filters and activation function as ReLu.
+- Then again I have applied MaxPooling2D with pool size as 2X2 and here I have also applied the strides as 2X2 so that less feature reduction will be there.
+- Then I have applied the flatten layer.
+- Lastly I have applied 4 Dense Layers aith size 100, 200, 200 and 100. Here also I have used ReLu as my Activation Function.
+- Then the final Dense layer with 5 size and here I have used SoftMax as ny Activation Function. This layer will give 10 possible classes of flowers.
+
+## Fitting Nodel
+For futting the model I have used batch size as 128, number of epochs as 50, and verbose as 1.
+
 ## Graphs
 ### Comparision of Loss of Training and Testing Data VS No. of Epoches
 ![Graph3](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/7149a858-3adc-435c-bd71-734ace372dbc)
 
 ### Comparision of Model Accuracy of Training and Testing Data VS No. of Epoches
 ![Graph4](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/a8077431-e278-4264-8b88-289c20f4a68f)
+
+## Conclusion 
+In the last I will conclude by giving the model loass and accuracy as 0.7966 and 0.785 respectively also the validation loass and validation accuracy as 0.8198 and 0.7157 respectively.
 
 So, this is the project which I have developed. Hope you liked it.
