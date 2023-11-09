@@ -18,7 +18,6 @@ This dataset contains 4242 images of flowers.
 The data collection is based on the data flicr, google images, yandex images.
 You can use this datastet to recognize plants from the photo.
 
-### Content
 The pictures are divided into five classes: chamomile, tulip, rose, sunflower, dandelion.
 For each class there are about 800 photos. Photos are not high resolution, about 320x240 pixels. Photos are not reduced to a single size, they have different proportions!
 
@@ -28,7 +27,10 @@ The given below file is the input. Here we can see the 5 tyes of flowers i.e. Da
 
 ##Dataset Preprocessing 
 Here I have applied the LabelEncoding as a Preprocessing. Also I have divided the Image by 255 to take it in the range of 0 to 1. As a greyscale image have values from 0 to 255.
+![Screenshot 2023-11-09 102114](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/5354248e-238d-4b65-90dd-3afdef8b3131)
+
 I have also used keras.preprocess.imge to process my images to prevent overfitting.
+![Screenshot 2023-11-09 102123](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/5ed80bce-2d9a-488d-bf23-ede9704e70c7)
 
 ## Modeling 
 - For modeling my data I have used CNN ie Convolutional Neural Network. with 40 filters and ReLu as my Activation Function.
@@ -42,9 +44,17 @@ I have also used keras.preprocess.imge to process my images to prevent overfitti
 - Then I have applied the flatten layer.
 - Lastly I have applied 4 Dense Layers aith size 100, 200, 200 and 100. Here also I have used ReLu as my Activation Function.
 - Then the final Dense layer with 5 size and here I have used SoftMax as ny Activation Function. This layer will give 10 possible classes of flowers.
+![Screenshot 2023-11-09 102206](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/9a042396-c017-4f91-9940-2b5dd05a76a1)
+
+## Model Summary
+![Screenshot 2023-11-09 102215](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/bc7573b0-7028-450d-94a6-430e01cc3fb2)
+
 
 ## Fitting Nodel
 For futting the model I have used batch size as 128, number of epochs as 50, and verbose as 1.
+![Screenshot 2023-11-09 102344](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/c269d2fa-9e30-4904-a5f1-4e4fa15729d1)
+![Screenshot 2023-11-09 102330](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/14fa7e6f-abde-4516-a289-e338f1a266c5)
+
 
 ## Graphs
 ### Comparision of Loss of Training and Testing Data VS No. of Epoches
@@ -55,5 +65,6 @@ For futting the model I have used batch size as 128, number of epochs as 50, and
 
 ## Conclusion 
 In the last I will conclude by giving the model loass and accuracy as 0.7966 and 0.785 respectively also the validation loass and validation accuracy as 0.8198 and 0.7157 respectively.
+![Screenshot 2023-11-09 102423](https://github.com/AbhishekGit23/Flower-Detection/assets/123490715/5f1e4908-56ee-4b0b-ada5-d4fa45b4709c)
 
 So, this is the project which I have developed. Hope you liked it.
